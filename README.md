@@ -10,7 +10,9 @@ Name- Akshar Chaudhari
 Static Analysis:
 
 git repository: https://github.com/jassics/learning-python.git
+
 Language: Python
+
 Tool:mypy/mypy Playground 
 
 
@@ -25,6 +27,8 @@ Code:
 name = Sanjeev
 print("hello "+name+"\n")
 
+
+
 Errors: main.py:6: error: Name "Sanjeev" is not defined  [name-defined]
 
 In this sample code defined name must be in “”. If not it can't be defined as the given  name.  
@@ -34,26 +38,19 @@ In this sample code defined name must be in “”. If not it can't be defined a
 2)
 
 Code:
+
+
 #!/usr/bin/python
-
-# This tutorial will cover the concept of numeric type conversion in Python3.x
-
-# Int
 positive_int = 55
 
-# Float
 negative_float = -2.9987654
 
-# Complex 
 complex_num = 1j
 
-# convert from int to float: 
 positive_float = float(positive_int)  
 
-# convert from float to int:
 negative_int = int(negative_float)  
 
-# convert from int to complex: 
 complex_from_int = complex(positive_int)  
 
 print{positive_float}
@@ -80,14 +77,7 @@ Code:
 #!/usr/bin/python
 import random
 
-# While loop syntax
-# while expression:
-#   statement(s)
-# You can use else block with while as well
-# while expression:
-#   statement(s)
-# else:
-#   statement(s)
+
 
 guess_num_range = 20A
 num_to_be_guessed = int(guess_num_range * random.random()) + 1
@@ -130,32 +120,18 @@ Code:
 
 #!/usr/bin/python
 
-# Examples of function in Python 3.x
-
-# When you need a function?
-#   When you want to perform a set of specific tasks and want to reuse that code whenever required
-#   Also, for better modularity, readability and troubleshooting
-
-# How to write a function (Syntax)?
 '''def function_name():
     {
         # some code here
     }
 '''
 
-# Different ways to pass parameters
-# What to return through function
-
-# A basic function of adding two numbers
 def add_numbers(num1, num2)
     return num1+num2
 
-# How to call a function?
-# most basic way to call a function is `function_name()`
-# Calling above function
+
 print(add_numbers(5,4))
 
-# Function to find if a number is even
 def  is_even(num):
     if num%2 == 0:
          True
