@@ -1,6 +1,6 @@
 # Lab-5_202001071
-IT314 - Software Engineering
-Lab 5 - Static Analysis
+# IT314 - Software Engineering
+# Lab 5 - Static Analysis
 
 Date- 15-3-23
 ID-202001071
@@ -16,8 +16,8 @@ Language: Python
 Tool:mypy/mypy Playground 
 
 
-1)
-Code:
+# 1)
+# Code:
 
 #!/usr/bin/python3
 """ First Python Program
@@ -29,15 +29,16 @@ print("hello "+name+"\n")
 
 
 
-Errors: main.py:6: error: Name "Sanjeev" is not defined  [name-defined]
+# Errors: 
+main.py:6: error: Name "Sanjeev" is not defined  [name-defined]
 
 In this sample code defined name must be in “”. If not it can't be defined as the given  name.  
 
 ![image](https://user-images.githubusercontent.com/123543030/225281983-763bf68a-f3f7-404a-9f7d-2f7840d25ba5.png)
 
-2)
+# 2)
 
-Code:
+# Code:
 
 
 #!/usr/bin/python
@@ -64,15 +65,16 @@ print(type(complex_from_int))
 
 
 
-Error: main.py:23: error: Missing parentheses in call to 'print'. Did you mean print(...)?  [syntax]
+# Error:
+main.py:23: error: Missing parentheses in call to 'print'. Did you mean print(...)?  [syntax]
 
 Tool detected Highlighted red line has a syntax error. Also the tool gives suggestions for correct syntax. Parentheses print should be print(..), that the correct syntax for it.
 
 ![image](https://user-images.githubusercontent.com/123543030/225282287-bc950230-45db-4912-a475-5b4df80e5e69.png)
 
-3)
+# 3)
 
-Code:
+# Code:
 
 #!/usr/bin/python
 import random
@@ -98,7 +100,7 @@ else:
 
 
 
-Error:
+# Error:
 
 main.py:13: error: invalid decimal literal  [syntax]
 
@@ -114,9 +116,9 @@ Observation : Currently in this particular code there are 2 mistakes but mypy ca
 ![image](https://user-images.githubusercontent.com/123543030/225282547-979613f5-90c4-480b-a1f5-24dbd814c915.png)
 
 
-4)
+# 4)
 
-Code:
+# Code:
 
 #!/usr/bin/python
 
@@ -146,7 +148,7 @@ else:
     
     
 
-Error:
+# Error:
 
 
 main.py:20: error: expected ':'  [syntax]
